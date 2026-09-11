@@ -1,62 +1,61 @@
-# Your startup name here
+# Solitaire Daily
 
 [My Notes](notes.md)
 
-A brief description of the application here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-> [!NOTE]
-> This is a template for your startup application. You must modify this `README.md` file for each phase of your development. You only need to fill in the section for each deliverable when that deliverable is submitted in Canvas. Without completing the section for a deliverable, the TA will not know what to look for when grading your submission. Feel free to add additional information to each deliverable description, but make sure you at least have the list of rubric items and a description of what you did for each item.
-
-> [!NOTE]
-> If you are not familiar with Markdown then you should review the [documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) before continuing.
+A brief description of the application here.
 
 ### Elevator pitch
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+A daily solitaire puzzle where everyone gets the same deal. You have one attempt, that's all until tomorrow. Zero potential for endless time-wasting. Compare your time and move count to others around the world.
 
 ### Design
 
-![Design image](placeholder.png)
+<img width="1536" height="1024" alt="Solitaire Design Sketch" src="https://github.com/user-attachments/assets/1a279416-2cf9-4cf2-b346-28903d233fc5" />
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Image generated with OpenAi tools
 
 ```mermaid
 sequenceDiagram
-    actor You
-    actor Website
-    You->>Website: Replace this with your design
+    actor Player 1
+    actor Player 2
+    actor Player 3
+    Player 1->>Server: Game completed: 86 moves, 10:05
+    Server -->>Player 2: Player 1 - 4th place 86 moves, 11th place 10:05
+    Server -->>Player 3: Player 1 - 4th place 86 moves, 11th place 10:05
 ```
 
 ### Key features
 
-- Describe your key feature
-- Describe your key feature
-- Describe your key feature
+- One attempt per day per user
+- Every player plays the same random deal
+- Compare your time and move count with other players, updated in real-time
 
 ### Technologies
 
 I am going to use the required technologies in the following ways.
 
-- **HTML** - Description here
-- **CSS** - Description here
-- **React** - Description here
-- **Service** - Description here
-- **DB/Login** - Description here
-- **WebSocket** - Description here
+- **HTML** - Framework for main page and login page
+- **CSS** - Design and decoration (cards, UI style, card movement/flip animation, etc.)
+- **React** - Login, game-state handling, user interaction with cards, game display changes, 
+- **Service** - Backend endpoints for:
+      Account creation/login/logout
+      Submitting your time and move count on game completion
+      Get scores and move counts for after game statistics
+      Check if the user has played today's game yet
+      Daily quotes from https://zenquotes.io/
+- **DB/Login** - Stores account info, completion times, move counts, game completion for today and past days
+- **WebSocket** - Live leaderboard and statistics
 
 ## 🚀 Specification Deliverable
 
-> [!NOTE]
-> Fill in this sections as the submission artifact for this deliverable. You can refer to this [example](https://github.com/webprogramming260/startup-example/blob/main/README.md) for inspiration.
-
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] I completed the prerequisites for this deliverable (Git commit requirement)
-- [ ] Proper use of Markdown
-- [ ] A concise and compelling elevator pitch
-- [ ] Description of key features
-- [ ] Description of how you will use each technology including your 3rd party API and use of WebSocket
-- [ ] One or more rough sketches of your application. Images must be embedded in this file using Markdown image references.
+- [x] I completed the prerequisites for this deliverable (Git commit requirement)
+- [x] Proper use of Markdown
+- [x] A concise and compelling elevator pitch
+- [x] Description of key features
+- [x] Description of how you will use each technology including your 3rd party API and use of WebSocket
+- [x] One or more rough sketches of your application. Images must be embedded in this file using Markdown image references.
 
 ## 🚀 AWS deliverable
 
