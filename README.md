@@ -69,16 +69,16 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] I completed the prerequisites for this deliverable (Simon deployed, GitHub link, Git commits)
-- [ ] **HTML pages** - I did not complete this part of the deliverable.
-- [ ] **Proper HTML element usage** - I did not complete this part of the deliverable.
-- [ ] **Links** - I did not complete this part of the deliverable.
-- [ ] **Text** - I did not complete this part of the deliverable.
-- [ ] **3rd party API placeholder** - I did not complete this part of the deliverable.
-- [ ] **Images** - I did not complete this part of the deliverable.
-- [ ] **Login placeholder** - I did not complete this part of the deliverable.
-- [ ] **DB data placeholder** - I did not complete this part of the deliverable.
-- [ ] **WebSocket placeholder** - I did not complete this part of the deliverable.
+- [x] I completed the prerequisites for this deliverable (Simon deployed, GitHub link, Git commits)
+- [x] **HTML pages** - Created Main (index.html), Login, and Stats pages
+- [x] **Proper HTML element usage** - Proper use of head, header, nav, main, body, p, a, h1-2, img, footer, and more
+- [x] **Links** - Temporary links, will be replaced by a dropdown menu in JS
+- [x] **Text**
+- [x] **3rd party API placeholder** - Placeholder for zenquotes on login.html
+- [x] **Images** - Placeholder solitaire game image + default account image
+- [x] **Login placeholder** - Placeholder form/input fields
+- [x] **DB data placeholder** - on stats.html
+- [x] **WebSocket placeholder** - on index.html and stats.html
 
 ## 🚀 CSS deliverable
 
