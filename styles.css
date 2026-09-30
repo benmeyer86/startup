@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 
 body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
   margin: 0;
   background: #f3f5f1;
   color: #26332c;
   font-family: 'Nunito', sans-serif;
 }
 
-.site-header {
+header {
   background: #fff;
   border-bottom: 1px solid #dce3dc;
 }
 
-.site-nav {
+nav {
   min-height: 76px;
   display: flex;
   align-items: center;
@@ -22,7 +25,7 @@ body {
   padding-block: 0.75rem;
 }
 
-.site-nav p {
+nav p {
   max-width: 40rem;
   margin: 0;
   color: #5d6c62;
@@ -38,7 +41,7 @@ a:hover {
   color: #183f2a;
 }
 
-.site-main {
+main {
   padding-block: 2rem 3rem;
 }
 
@@ -75,25 +78,12 @@ h2 {
   border-radius: 4px;
 }
 
-li:nth-child(odd) {
-  color: #53645a;
-}
-
-.login-main {
-  max-width: 760px;
-}
-
-.login-panel {
-  max-width: 440px;
-  margin-inline: auto;
-}
-
-.login-form {
+form {
   display: grid;
   gap: 0.75rem;
 }
 
-.login-form input {
+form input {
   width: 100%;
   padding: 0.7rem 0.8rem;
   border: 1px solid #b9c7bd;
@@ -101,37 +91,32 @@ li:nth-child(odd) {
   font: inherit;
 }
 
-.quote-placeholder {
+aside {
   max-width: 440px;
   margin: 1.5rem auto 0;
   color: #53645a;
 }
 
-.site-footer {
+footer {
   padding-block: 1rem;
   background: #e7ece7;
   color: #53645a;
   font-size: 0.9rem;
 }
 
-.footer-content {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.75rem;
+footer p {
+  margin: 0;
 }
 
-.site-footer p {
-  margin-bottom: 0;
-}
+/* TODO: Add dark mode support with @media */
 
 @media (max-width: 600px) {
-  .site-nav {
+  nav {
     align-items: flex-start;
     flex-direction: column;
   }
 
-  .site-main {
+  main {
     padding-block: 1.5rem 2rem;
   }
 

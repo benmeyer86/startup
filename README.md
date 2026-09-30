@@ -84,13 +84,13 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] I completed the prerequisites for this deliverable (Simon deployed, GitHub link, Git commits)
-- [ ] **Visually appealing colors and layout. No overflowing elements.** - I did not complete this part of the deliverable.
-- [ ] **Use of a CSS framework** - I did not complete this part of the deliverable.
-- [ ] **All visual elements styled using CSS** - I did not complete this part of the deliverable.
-- [ ] **Responsive to window resizing using flexbox and/or grid display** - I did not complete this part of the deliverable.
-- [ ] **Use of a imported font** - I did not complete this part of the deliverable.
-- [ ] **Use of different types of selectors including element, class, ID, and pseudo selectors** - I did not complete this part of the deliverable.
+- [x] I completed the prerequisites for this deliverable (Simon deployed, GitHub link, Git commits)
+- [x] **Visually appealing colors and layout. No overflowing elements.** - Created a color palette with figma and used AI to apply it. 
+- [x] **Use of a CSS framework** - Bootstrap container class (& others) used extensively
+- [x] **All visual elements styled using CSS**
+- [x] **Responsive to window resizing using flexbox and/or grid display** Flexbox, Grid, Bootstrap containers used for display sizing/layout.
+- [x] **Use of a imported font** - Nunito font imported from Google Fonts
+- [x] **Use of different types of selectors including element, class, ID, and pseudo selectors** All 4 types used at least once. Most are plain element selectors (after removing redundant classes added by AI)
 
 ## 🚀 React part 1: Routing deliverable
 
