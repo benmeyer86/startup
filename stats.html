@@ -5,11 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solitaire Daily - Stats</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
   </head>
 
   <body>
-    <header>
-      <nav>
+    <header class="site-header">
+      <nav class="container site-nav">
         <p>Image will open a dropdown nav menu with JS (including login). Will be replaced by profile image when signed in</p>
         <a href="login.html">
           <img
@@ -25,10 +27,11 @@
       </nav>
     </header>
 
-    <main>
+    <main class="container site-main">
       <h1>Statistics</h1>
 
-      <div >
+      <div class="row g-4 content-grid">
+      <div class="col-12 col-lg-6 content-panel">
         <h2>Websocket Placeholder(s):</h2>
         <p>Leaderboard (Time)</p>
         <p>Leaderboard (Moves)</p>
@@ -36,7 +39,7 @@
         <p>Chart (Moves)</p>
       </div>
         
-      <div>
+      <div class="col-12 col-lg-6 content-panel">
         <h2>Database Data Placeholder:</h2>
         <p>Streak</p>
         <p>Calendar showing days completed</p>
@@ -44,10 +47,14 @@
         <p>Fewest Moves</p>
         <p>etc...</p>
       </div>
+      </div>
     </main>
 
-    <footer>
-      <p>Benjamin Meyers CS 260 Startup</p>
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>Benjamin Meyers CS 260 Startup</p>
+        <a href="https://github.com/benmeyer86/startup">Github link</a>
+      </div>
     </footer>
   </body>
 </html>
