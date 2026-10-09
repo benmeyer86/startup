@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 
-body {
+
+.body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
