@@ -17,4 +17,3 @@ AI loves to assign redundant classes to tags that are used once or have the same
 
 ## React
 
-Interesting things I have learned about React
