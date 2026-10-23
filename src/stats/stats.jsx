@@ -1,7 +1,7 @@
 import React from 'react';
 import './stats.css';
 
-export function Stats() {
+export function Stats({user}) {
   return (
     <main className="container">
       <h1>Statistics</h1>

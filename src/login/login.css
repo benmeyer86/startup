@@ -16,3 +16,22 @@ aside {
   margin: 1.5rem auto 0;
   color: #53645a;
 }
+
+button {
+  width: fit-content;
+  justify-self: center;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid #286344;
+  border-radius: 4px;
+  background: #286344;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: bold;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+button:hover {
+  border-color: #183f2a;
+  background: #183f2a;
+}

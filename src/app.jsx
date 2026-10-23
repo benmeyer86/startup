@@ -7,31 +7,28 @@ import { Play } from './play/play';
 import { Stats } from './stats/stats';
 
 export default function App() {
+  const [user, setUser] = React.useState(localStorage.getItem('user') || null);
   return (
     <BrowserRouter>
       <div className="body bg-dark text-light">
         <header>
           <nav className="container">
-            <p>Image will open a dropdown nav menu with JS (including login). Will be replaced by profile image when signed in</p>
-            <p>temporary links:</p>
-            <NavLink to="/login">Login</NavLink>
             <NavLink to="/stats">Stats</NavLink>
             <NavLink to="">Play</NavLink>
-            <NavLink to="/login">
+            <NavLink className="profile-link" to="/login">
               <img
                 src="/default_account.png"
                 alt="Profile image"
-                width="60"
-                height="60"
               />
+              <span>{user || 'Log in'}</span>
             </NavLink>
           </nav>
         </header>
 
         <Routes>
-          <Route path='/' element={<Play />} exact />
-          <Route path='/login' element={<Login />} />
-          <Route path='/stats' element={<Stats />} />
+          <Route path='/' element={<Play user={user} />} exact />
+          <Route path='/login' element={<Login setUser={setUser} />} />
+          <Route path='/stats' element={<Stats user={user} />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
 

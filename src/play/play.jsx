@@ -1,7 +1,7 @@
 import React from 'react';
 import './play.css';
 
-export function Play() {
+export function Play({user}) {
   return (
     <main className="container">
       <h1>Solitaire Daily</h1>
