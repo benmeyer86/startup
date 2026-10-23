@@ -28,7 +28,10 @@ export function Login({setUser}) {
       <form onSubmit={loginUser}>
           <input id="username" name="username" type="text" placeholder="Username" onChange={usernameChange} />
           <input id="password" name="password" type="password" placeholder="Password " onChange={passwordChange} />
-          <button type="submit">Log in</button>
+          <div className="login-actions">
+            <button type="submit">Log in</button>
+            <button type="submit">Create Account</button>
+          </div>
       </form>
       <aside>This aside is a placeholder for the third-party service, used to fetch a random quote.</aside>
     </main>

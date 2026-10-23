@@ -17,17 +17,22 @@ aside {
   color: #53645a;
 }
 
+.login-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
 button {
-  width: fit-content;
-  justify-self: center;
+  width: 9rem;
   padding: 0.45rem 0.8rem;
   border: 1px solid #286344;
   border-radius: 4px;
   background: #286344;
   color: #fff;
   font: inherit;
+  font-weight: 700;
   cursor: pointer;
-  text-decoration: bold;
   transition: background-color 150ms ease, border-color 150ms ease;
 }
 

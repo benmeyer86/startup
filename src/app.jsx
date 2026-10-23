@@ -7,7 +7,7 @@ import { Play } from './play/play';
 import { Stats } from './stats/stats';
 
 export default function App() {
-  const [user, setUser] = React.useState(localStorage.getItem('user') || null);
+  const [user, setUser] = React.useState(null);
   return (
     <BrowserRouter>
       <div className="body bg-dark text-light">
