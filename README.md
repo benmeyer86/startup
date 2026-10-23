@@ -10,10 +10,6 @@ A daily solitaire puzzle where everyone gets the same deal. You have one attempt
 
 ### Design
 
-<img width="1536" height="1024" alt="Solitaire Design Sketch" src="https://github.com/user-attachments/assets/1a279416-2cf9-4cf2-b346-28903d233fc5" />
-
-Image generated with OpenAi tools
-
 ```mermaid
 sequenceDiagram
     actor Player 1
@@ -105,9 +101,9 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] I completed the prerequisites for this deliverable (Simon deployed, GitHub link, Git commits)
-- [ ] **All functionality implemented or mocked out** - I did not complete this part of the deliverable.
-- [ ] **Hooks** - I did not complete this part of the deliverable.
+- [x] I completed the prerequisites for this deliverable (Simon deployed, GitHub link, Git commits)
+- [x] **All functionality implemented or mocked out**
+- [x] **Hooks** 
 
 ## 🚀 Service deliverable
 
